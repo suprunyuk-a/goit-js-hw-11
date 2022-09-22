@@ -9,6 +9,12 @@ const obj = {
 
 const { searchForm, searchInput, galleryElem, sentinelElem } = obj;
 
+let inputValue = '';
+let imageSearch = '';
+let hitsArray = [];
+let page = 0;
+let totalHits = 0;
+
 function renderImagesList(search) {
   hitsArray = search.data.hits;
 
